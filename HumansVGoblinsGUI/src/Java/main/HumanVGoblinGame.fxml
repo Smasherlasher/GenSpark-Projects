@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="750.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0c861d" height="750.0" stroke="BLACK" strokeType="INSIDE" width="750.0" />
+            <GridPane fx:id="gameBoard" prefHeight="750.0" prefWidth="750.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#979797" height="151.0" layoutY="749.0" stroke="BLACK" strokeType="INSIDE" width="750.0" />
+            <Pane fx:id="chestPane" layoutX="194.0" layoutY="150.0" prefHeight="264.0" prefWidth="375.0" scaleX="0.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="264.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="375.0" />
+                  <Button fx:id="pickUp" layoutX="74.0" layoutY="201.0" mnemonicParsing="false" text="PickUp" />
+                  <Button fx:id="leave" layoutX="268.0" layoutY="201.0" mnemonicParsing="false" text="Leave" />
+                  <Text layoutX="56.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chest containes: " />
+                  <Text fx:id="chestItem" layoutX="150.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="strChange" layoutX="33.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="intellChange" layoutX="33.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <Text fx:id="agiChange" layoutX="33.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+               </children>
+            </Pane>
+            <Pane layoutY="750.0" prefHeight="158.0" prefWidth="170.0">
+               <children>
+                  <Button fx:id="inventory" mnemonicParsing="false" text="Inventory" />
+                  <Button fx:id="characterStats" layoutX="70.0" mnemonicParsing="false" text="Character Stats" />
+                  <Button fx:id="north" layoutX="60.0" layoutY="35.0" mnemonicParsing="false" prefWidth="50.0" text="North" />
+                  <Button fx:id="east" layoutX="115.0" layoutY="65.0" mnemonicParsing="false" prefWidth="50.0" text="East" />
+                  <Button fx:id="west" layoutX="5.0" layoutY="65.0" mnemonicParsing="false" prefWidth="50.0" text="West" />
+                  <Button fx:id="south" layoutX="60.0" layoutY="95.0" mnemonicParsing="false" prefWidth="50.0" text="South" />
+                  <Button fx:id="stay" layoutX="60.0" layoutY="65.0" mnemonicParsing="false" prefWidth="50.0" text="Stay" />
+               </children>
+            </Pane>
+            <Pane fx:id="inventoryPane" layoutX="279.0" layoutY="750.0" prefHeight="150.0" prefWidth="475.0" />
+             <Pane fx:id="humanPane" layoutX="576.0" layoutY="500.0" prefHeight="400.0" prefWidth="174.0" scaleX="0.0">
+                 <children>
+                     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="400.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="5.0" width="175.0" />
+                     <GridPane alignment="CENTER" prefHeight="264.0" prefWidth="175.0">
+      
+                         <columnConstraints>
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="97.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="103.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="103.0" />
+      
+                         </columnConstraints>
+                         <rowConstraints>
+                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         </rowConstraints>
+                         <children>
+                             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <image>
+                                     <Image url="@../Images/Boots.png" />
+                                 </image>
+                        </ImageView>
+                             <ImageView fx:id="weaponType" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                             <ImageView fitHeight="50.0" fitWidth="50.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                 <image>
+                                     <Image url="@../Images/Helmet.png" />
+                                 </image>
+                             </ImageView>
+                             <ImageView fitHeight="47.0" fitWidth="46.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                 <image>
+                                     <Image url="@../Images/Gloves.png" />
+                                 </image>
+                             </ImageView>
+                             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <image>
+                                     <Image url="@../Images/Greaves.png" />
+                                 </image>
+                        </ImageView>
+                             <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <image>
+                                     <Image url="@../Images/ChestPlate.png" />
+                                 </image>
+                        </ImageView>
+                             <Text fx:id="agiltiy" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                             <Text fx:id="strength" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="4" />
+                             <Text fx:id="intelligence" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                         </children>
+                     </GridPane>
+                     <GridPane layoutY="275.0" prefHeight="125.0" prefWidth="175.0">
+                         <columnConstraints>
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                         </columnConstraints>
+                         <rowConstraints>
+                             <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                         </rowConstraints>
+                         <children>
+                             <Text fx:id="strPlayer" strokeType="OUTSIDE" strokeWidth="0.0" />
+                             <Text fx:id="allHealthPlayer" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" />
+                             <Text fx:id="intellPlayer" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="1" />
+                             <Text fx:id="allManaPlayer" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                             <Text fx:id="agiPlayer" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.rowIndex="2" />
+                             <Text fx:id="spePlayer" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                         </children>
+                     </GridPane>
+                     <Text fx:id="playerName" layoutX="55.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                 </children>
+             </Pane>
+            <Pane fx:id="buffPane" layoutX="170.0" layoutY="749.0" prefHeight="150.0" prefWidth="100.0" scaleX="0.0">
+               <children>
+                  <Text fx:id="buffTimer" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+                  <ImageView fx:id="buffImage" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+         </children>
+
+      </Pane>
+   </children>
+</AnchorPane>
