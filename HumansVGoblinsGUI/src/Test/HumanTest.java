@@ -62,7 +62,7 @@ class HumanTest {
         ByteArrayInputStream in = new ByteArrayInputStream(userInput.getBytes());
         System.setIn(in);
         int oldHealth = human.getHealth();
-        human.inventoryManagement(userInput);
+        //human.inventoryManagement(userInput);
         assertNotEquals(oldHealth,human.getHealth());
     }
     @Test
@@ -73,7 +73,7 @@ class HumanTest {
         ByteArrayInputStream in = new ByteArrayInputStream(userInput.getBytes());
         System.setIn(in);
         Helmet oldHelmet = human.getHead();
-        human.inventoryManagement(userInput);
+        //human.inventoryManagement(userInput);
         assertNotEquals(oldHelmet,human.getHead());
     }
     @Test
