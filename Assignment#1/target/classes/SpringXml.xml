@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+    <bean id="address" class="org.genspark.Xml.Address">
+        <property name="city" value="Lafayette"/>
+        <property name="state" value="LA"/>
+        <property name="country" value="USA"/>
+        <property name="zipcode" value="70508"/>
+
+    </bean>
+    <bean id="phone" class="org.genspark.Xml.Phone">
+         <property name="mob" value="Galaxy S8" />
+    </bean>
+    <bean id="student" class="org.genspark.Xml.Student">
+        <property name="id" value="1" />
+        <property name="name" value="Ian" />
+        <property name="ph" ref="phone"/>
+        <property name="add" ref="address" />
+
+    </bean>
+</beans>
